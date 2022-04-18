@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="BeeMall.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+<%--        <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <!-- css files -->
+    <link href="head/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- bootstrap css -->
+    <link href="head/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- custom css -->
+    <link href="head/css/font-awesome.min.css" rel="stylesheet">
+    <!-- fontawesome css -->
+    <!-- //css files -->
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <!-- //google fonts -->
+    <section class="banner" id="home">
+        <div class="container">
+            <div class="banner-text">
+                <div class="slider-info">
+                    <div class="w3layouts-text mt-lg-5">
+                        <h2>Plan your Holiday Trip Now Exceptional Adventure</h2>
+                        <p class="mt-3">Aliquam sodales neque ullamcorper vestibulum consequat. Curabitur mauris justo, rutrum sit amet pulvinar et, rutrum mattis augue. In faucibus orci vitae nulla ipsum.</p>
+                    </div>
+                </div>
+                <!-- To bottom button-->
+                <div class="thim-click-to-bottom mt-sm-5 mt-3 pt-lg-5">
+                    <div class="rotate">
+                        <a href="#choose" class="scroll">
+                            <span class="fa fa-angle-double-down"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- //To bottom button-->
+            </div>
+        </div>
+    </section>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>BeeMall</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="temp/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="temp/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Temp/css/Site.css" rel="stylesheet" />
+    <script type="text/javascript" src="temp/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="temp/js/move-top.js"></script>
+    <script type="text/javascript" src="temp/js/easing.js"></script>
+    <script type="text/javascript" src="temp/js/startstop-slider.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="headertop_desc">
+                <div class="call">
+                    <p><span>Hỗ trợ?</span>Hãy gọi cho chúng tôi <span class="number">0123456789</span></p>
+                </div>
+                <div class="account_desc">
+                    <ul>
+                        <li><a href="#">Đăng ký</a></li>
+                        <li><a href="#">Đăng nhập</a></li>
+<%--                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">My Account</a></li>--%>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="header_top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="temp/images/logo.png" alt="" /></a>
+                </div>
+                <div class="cart">
+                    
+                        Giỏ hàng của bạn <div id="dd" class="wrapper-dropdown-2">
+                            0 Sản phẩm - 0 VND
+                            <%--<ul class="dropdown">
+                                <li>you have no items in your Shopping cart</li>
+                            </ul>--%>
+                        </div>
+                    <script type="text/javascript">
+                    function DropDown(el) {
+                        this.dd = el;
+                        this.initEvents();
+                    }
+                    DropDown.prototype = {
+                        initEvents: function () {
+                            var obj = this;
+
+                            obj.dd.on('click', function (event) {
+                                $(this).toggleClass('active');
+                                event.stopPropagation();
+                            });
+                        }
+                    }
+
+                    $(function () {
+
+                        var dd = new DropDown($('#dd'));
+
+                        $(document).click(function () {
+                            // all dropdowns
+                            $('.wrapper-dropdown-2').removeClass('active');
+                        });
+
+                    });
+
+		</script><%--xử lý sự kiên cho dropdown--%>
+                </div>
+                
+                <div class="clear"></div>
+            </div>
+            <div class="header_bottom">
+                <div class="menu">
+                    <ul>
+                        <li class="active"><a href="Home.aspx">Trang chủ</a></li>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                        <%--<li><a href="delivery.html"></a></li>--%>
+                        <li><a href="?f=news">Tin tức-sự kiện</a></li>
+                        <li><a href="?f=contact">Liên hệ</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="search_box">
+                    <form>
+                        <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+                    </form>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+	</script>
+    <a href="#" id="toTop"><span id="toTopHover"></span></a>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+
+</html>
+<%--    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>--%>

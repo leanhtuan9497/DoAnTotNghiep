@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ProductControl.ascx.cs" Inherits="BeeMall.admin.Product.ProductControl" %>
+<div><a href="?f=product&fs=cate">Product Category</a>&nbsp;|&nbsp;<a href="?f=product&fs=del">Product Detail</a></div>

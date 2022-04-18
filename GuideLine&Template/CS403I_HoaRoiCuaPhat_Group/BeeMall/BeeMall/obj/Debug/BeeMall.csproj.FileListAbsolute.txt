@@ -1,0 +1,172 @@
+D:\Asp.net\BeeMall\BeeMall\bin\BeeMall.dll.config
+D:\Asp.net\BeeMall\BeeMall\bin\BeeMall.dll
+D:\Asp.net\BeeMall\BeeMall\bin\BeeMall.pdb
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\csc.exe
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\csc.exe.config
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\csc.rsp
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\csi.exe
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\csi.exe.config
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\csi.rsp
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.AppContext.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Collections.Immutable.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Console.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.IO.Compression.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.IO.FileSystem.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.IO.Pipes.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Reflection.Metadata.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Security.AccessControl.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Security.Claims.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.ValueTuple.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Xml.XPath.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\vbc.exe
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\vbc.exe.config
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\vbc.rsp
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\VBCSCompiler.exe
+D:\Asp.net\BeeMall\BeeMall\bin\roslyn\VBCSCompiler.exe.config
+D:\Asp.net\BeeMall\BeeMall\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Asp.net\BeeMall\BeeMall\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Asp.net\BeeMall\BeeMall\obj\Debug\BeeMall.csprojAssemblyReference.cache
+D:\Asp.net\BeeMall\BeeMall\obj\Debug\BeeMall.csproj.CoreCompileInputs.cache
+D:\Asp.net\BeeMall\BeeMall\obj\Debug\BeeMall.csproj.CopyComplete
+D:\Asp.net\BeeMall\BeeMall\obj\Debug\BeeMall.dll
+D:\Asp.net\BeeMall\BeeMall\obj\Debug\BeeMall.pdb
+D:\Asp.net\BeeMall\BeeMall\bin\FreeTextBox.dll
+D:\Asp.net\BeeMall\BeeMall\obj\Debug\BeeMall.dll.licenses
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\obj\Debug\BeeMall.csprojAssemblyReference.cache
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\obj\Debug\BeeMall.dll.licenses
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\obj\Debug\BeeMall.csproj.CoreCompileInputs.cache
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\obj\Debug\BeeMall.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\obj\Debug\BeeMall.pdb
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\BeeMall.dll.config
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\BeeMall.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\BeeMall.pdb
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\csc.exe
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\csc.exe.config
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\csc.rsp
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\csi.exe
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\csi.exe.config
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\csi.rsp
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.AppContext.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Console.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.IO.Compression.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.IO.Pipes.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Security.Claims.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.ValueTuple.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Xml.XPath.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\vbc.exe
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\vbc.exe.config
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\vbc.rsp
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\VBCSCompiler.exe
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\devil\Desktop\DA CNPM\BeeMall\BeeMall\obj\Debug\BeeMall.csproj.CopyComplete
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\BeeMall.dll.config
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\BeeMall.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\BeeMall.pdb
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\csc.exe
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\csc.exe.config
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\csc.rsp
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\csi.exe
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\csi.exe.config
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\csi.rsp
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.AppContext.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Collections.Immutable.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Console.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.IO.Compression.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.IO.FileSystem.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.IO.Pipes.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Reflection.Metadata.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Security.AccessControl.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Security.Claims.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.ValueTuple.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Xml.XPath.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\vbc.exe
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\vbc.exe.config
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\vbc.rsp
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\VBCSCompiler.exe
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\roslyn\VBCSCompiler.exe.config
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\obj\Debug\BeeMall.csprojAssemblyReference.cache
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\obj\Debug\BeeMall.dll.licenses
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\obj\Debug\BeeMall.csproj.CoreCompileInputs.cache
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\obj\Debug\BeeMall.csproj.CopyComplete
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\obj\Debug\BeeMall.dll
+D:\Study\cong nghe phan mem\CS403I_HoaRoiCuaPhat_Group\BeeMall\BeeMall\obj\Debug\BeeMall.pdb
