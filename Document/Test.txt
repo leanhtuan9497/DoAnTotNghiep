@@ -1,0 +1,13 @@
+User case tổng quát:
+Admin
+ - QL website (hình ảnh, tt sp, content)
+ - QL user (tt user, tài khoản e-voucher, KYC)
+ - QL Lịch sử đơn hàng (tt đơn hàng, ..)
+ - QL Lịch sử chiết khấu (tt chiết khấu)
+User 
+ bao gồm 3 role: user vãng lai, user có ID nhưng không có ref, user có ID và có ref
+Merchant
+ - QL sản phẩm
+ - QL chiết khấu
+ - QL lịch sử đơn hàng
+ - QL khuyến mãi
