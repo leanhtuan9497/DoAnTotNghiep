@@ -29,7 +29,7 @@ public class CartDaoImpl extends JDBCConnection implements CartDao {
 
 	@Override
 	public void insert(Cart cart) {
-		String sql = "INSERT INTO Cart(id,u_id, buyDate) VALUES (?,?,?)";
+		String sql = "INSERT INTO Cart(id,u_id, buyDate,total_amount) VALUES (?,?,?,?)";
 		Connection con = super.getJDBCConnection();
 
 		try {
@@ -37,8 +37,33 @@ public class CartDaoImpl extends JDBCConnection implements CartDao {
 			ps.setString(1, cart.getId());
 			ps.setInt(2, cart.getBuyer().getId());
 			ps.setDate(3, new Date(cart.getBuyDate().getTime()));
+			ps.setFloat(4, cart.getTotal_amount());
+
+			PreparedStatement ps2 = con.prepareStatement("SELECT * FROM [User] WHERE id = ?");
+			ps2.setInt(1, cart.getBuyer().getId());
+			ResultSet rs = ps2.executeQuery();
+			rs.next();
+			String refCode = rs.getString("ref_code");
+
+			int point;
+			float rate = 0.03f;
+			PreparedStatement ps3 = con.prepareStatement("UPDATE [User] SET point = ? WHERE id =?");
+			ps3.setInt(2, cart.getBuyer().getId());
+			ps3.setInt(1, cart.getBuyer().getPoint() + Math.round(cart.getTotal_amount() * 0.2f));
+			ps3.executeUpdate();
+			for (String ref : refCode.split("-")) {
+				ps2.setInt(1, Integer.parseInt(ref));
+				rs = ps2.executeQuery();
+				rs.next();
+				point = rs.getInt("point");
+				ps3.setInt(1, point + Math.round(cart.getTotal_amount() * rate));
+				ps3.setInt(2, Integer.parseInt(ref));
+				ps3.executeUpdate();
+				rate = rate - 0.01f;
+			}
+
 			ps.executeUpdate();
-			
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

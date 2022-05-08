@@ -1,20 +1,11 @@
 package com.leanhtuan.service.impl;
 
-import java.io.File;
 import java.util.List;
 
 import com.leanhtuan.dao.CartDao;
-import com.leanhtuan.dao.ProductDao;
-import com.leanhtuan.dao.UserDao;
 import com.leanhtuan.dao.impl.CartDaoImpl;
-import com.leanhtuan.dao.impl.ProductDaoImpl;
-import com.leanhtuan.dao.impl.UserDaoImpl;
 import com.leanhtuan.model.Cart;
-import com.leanhtuan.model.Product;
-import com.leanhtuan.model.User;
 import com.leanhtuan.service.CartService;
-import com.leanhtuan.service.ProductService;
-import com.leanhtuan.service.UserService;
 
 public class CartServiceImpl implements CartService {
 	CartDao cartDao = new CartDaoImpl();
@@ -46,8 +37,7 @@ public class CartServiceImpl implements CartService {
 
 		oldCart.setBuyDate(newCart.getBuyDate());
 		oldCart.setBuyer(newCart.getBuyer());
-		
-		
+
 		cartDao.edit(oldCart);
 
 	}

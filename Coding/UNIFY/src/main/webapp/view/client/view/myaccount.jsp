@@ -73,19 +73,22 @@
 				<c:url value="/member/myaccount" var="myaccount"></c:url>
 				<form class="form" action="${myaccount }" method="post"
 					id="registrationForm" enctype="multipart/form-data">
-					<input name="role" value="${sessionScope.account.roleId }" hidden="" >
-					<input name="id" value="${sessionScope.account.id }" hidden="">
+					<input name="role" value="${sessionScope.account.roleId }"
+						hidden=""> <input name="id"
+						value="${sessionScope.account.id }" hidden="">
 					<div class="text-center">
 						<c:url value="/image?fname=${sessionScope.account.avatar }"
 							var="imgUrl"></c:url>
 						<img src="${imgUrl }" class="avatar img-circle img-thumbnail"
 							alt="avatar">
 						<h6>Upload a different photo...</h6>
-						<input type="file" name="avatar" class="text-center center-block file-upload">
+						<input type="file" name="avatar"
+							class="text-center center-block file-upload">
 					</div>
 					</hr>
 					<br>
 			</div>
+
 			<!--/col-3-->
 			<div class="col-sm-9">
 
@@ -115,7 +118,6 @@
 							</div>
 						</div>
 						<div class="form-group">
-
 							<div class="col-xs-6">
 								<label for="phone"><h4>Password</h4></label> <input
 									type="password" class="form-control" name="password" id="phone"
@@ -130,6 +132,34 @@
 								<label for="last_name"><h4>Website</h4></label> <input
 									type="text" class="form-control" name="website" id="last_name"
 									value="http://unify.com" title="enter your last name if any."
+									disabled="disabled">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="referalCode"><h4>Referral Code</h4></label> <input
+									type="text" class="form-control" name="referalCode"
+									id="referalCode" value="${sessionScope.account.referalCode }"
+									title="ref.">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="point"><h4>Point</h4></label> <input type="text"
+									class="form-control" name="point" id="point"
+									value="${sessionScope.account.point }" title="ref."
+									disabled="disabled">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="myReferalCode"><h4>My Referral Code</h4></label> <input
+									type="text" class="form-control" name="myReferalCode"
+									id="myReferalCode"
+									value="${sessionScope.account.myReferalCode }" title="ref."
 									disabled="disabled">
 							</div>
 						</div>
@@ -257,6 +287,16 @@
 		<!--/col-9-->
 	</div>
 	<!--/row-->
+	<script src="${url}/js/forms/page_account.js"></script>
+	<script>
+		window.onload = function checkRef() {
+			if (document.getElementById("referalCode").value === '') {
+				document.getElementById("referalCode").disabled = false;
+			} else
+				document.getElementById("referalCode").disabled = true;
+
+		};
+	</script>
 
 </body>
 </html>

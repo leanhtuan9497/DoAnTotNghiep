@@ -31,7 +31,7 @@ public class ProductServiceImpl implements ProductService {
 		if (newProduct.getImage() != null) {
 			// XOA ANH CU DI
 			String fileName = oldProduct.getImage();
-			final String dir = "/UNIFY/src/main/resources/images";
+			final String dir = "C:\\Users\\leanh\\Desktop\\DoAnTotNghiep\\DoAnTotNghiep\\Coding\\UNIFY\\src\\main\\resources\\images";
 			File file = new File(dir + "/" + fileName);
 			if (file.exists()) {
 				file.delete();

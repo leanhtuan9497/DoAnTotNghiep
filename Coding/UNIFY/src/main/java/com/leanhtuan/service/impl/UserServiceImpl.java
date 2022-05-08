@@ -26,6 +26,9 @@ public class UserServiceImpl implements UserService {
 		oldUser.setUsername(newUser.getUsername());
 		oldUser.setPassword(newUser.getPassword());
 		oldUser.setRoleId(newUser.getRoleId());
+		oldUser.setPoint(newUser.getPoint());
+		oldUser.setMyReferalCode(newUser.getMyReferalCode());
+		oldUser.setReferalCode(newUser.getReferalCode());
 		if (newUser.getAvatar() != null) {
 			// XOA ANH CU DI
 			String fileName = oldUser.getAvatar();
@@ -69,7 +72,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User login(String username, String password) {
 		User user = this.get(username);
-		if (user != null && BCrypt.checkpw(password,user.getPassword())) {
+		if (user != null && BCrypt.checkpw(password, user.getPassword())) {
 			return user;
 		}
 
@@ -77,15 +80,14 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public boolean register(String username, String password, String email) {
+	public boolean register(String username, String password, String email, String referalCode) {
 		if (userDao.checkExistUsername(username)) {
 			return false;
 		}
 		String hash = BCrypt.hashpw(password, BCrypt.gensalt(12));
-		userDao.insert(new User(email, username, hash));
+		userDao.insert(new User(email, username, hash, referalCode));
 		return true;
 	}
-	
 
 	public boolean checkExistEmail(String email) {
 		return userDao.checkExistEmail(email);

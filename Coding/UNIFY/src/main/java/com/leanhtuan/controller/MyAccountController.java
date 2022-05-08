@@ -52,6 +52,12 @@ public class MyAccountController extends HttpServlet {
 					user.setPassword(item.getString());
 				} else if (item.getFieldName().equals("role")) {
 					user.setRoleId(Integer.parseInt(item.getString()));
+				} else if (item.getFieldName().equals("point")) {
+					user.setPoint(Integer.parseInt(item.getString()));
+				} else if (item.getFieldName().equals("referalCode")) {
+					user.setReferalCode(item.getString());
+				} else if (item.getFieldName().equals("myReferalCode")) {
+					user.setMyReferalCode(item.getString());
 				} else if (item.getFieldName().equals("avatar")) {
 					if (item.getSize() > 0) {// neu co file d
 						final String dir = "F:\\upload";
@@ -72,7 +78,7 @@ public class MyAccountController extends HttpServlet {
 			userService.edit(user);
 			User u = userService.get(Integer.parseInt(id));
 			HttpSession session = req.getSession(true);
-			 session.setAttribute("account", u);
+			session.setAttribute("account", u);
 
 			resp.sendRedirect(req.getContextPath() + "/member/myaccount");
 		} catch (FileUploadException e) {

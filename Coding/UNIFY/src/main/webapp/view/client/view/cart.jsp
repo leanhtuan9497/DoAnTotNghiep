@@ -25,6 +25,7 @@
 			<li class="subtotal">
 				<div class="overflow-h margin-bottom-10">
 					<span>Subtotal</span>
+
 					<c:set var="total" value="${0}" />
 					<c:forEach items="${sessionScope.cart}" var="map">
 						<c:set var="total"
@@ -32,28 +33,44 @@
 					</c:forEach>
 					<span class="pull-right subtotal-cost">$ ${total }</span>
 
+				</div> 
+				<script type="text/javascript">
+					function cartConfirmDialog() {
+
+						var result = confirm("Do you want to checkout?");
+
+						if (result) {
+							alert("Success!");
+
+						} else {
+							alert("Denied!");
+						}
+					}
+					
+					function onChangeUsingCode() {
+						
+						if(document.getElementById('usingPoint').checked){
+							console.log(${total })
+						}
+					}
+				</script>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="usingPoint"
+						onchange="onChangeUsingCode()"> <label
+						class="form-check-label" for="usingPoint">Using
+						${sessionScope.account.point} Point</label>
 				</div>
+
 				<div class="row">
 					<div class="col-xs-6">
 						<a href="${pageContext.request.contextPath}/member/cart"
 							class="btn-u btn-brd btn-brd-hover btn-u-sea-shop btn-block">View
 							Cart</a>
 					</div>
-					<script type="text/javascript">
-						function cartConfirmDialog() {
 
-							var result = confirm("Do you want to checkout?");
-
-							if (result) {
-								alert("Success!");
-
-							} else {
-								alert("Denied!");
-							}
-						}
-					</script>
 					<div class="col-xs-6">
-						<a onclick="cartConfirmDialog()" href="${pageContext.request.contextPath}/member/order"
+						<a onclick="cartConfirmDialog()"
+							href="${pageContext.request.contextPath}/member/order?total=${total}"
 							class="btn-u btn-u-sea-shop btn-block">Checkout</a>
 					</div>
 				</div>

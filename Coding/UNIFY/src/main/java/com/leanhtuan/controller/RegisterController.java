@@ -52,6 +52,7 @@ public class RegisterController extends HttpServlet {
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 		String email = req.getParameter("email");
+		String referalCode = req.getParameter("referalCode");
 
 		UserService service = new UserServiceImpl();
 		String alertMsg = "";
@@ -69,7 +70,7 @@ public class RegisterController extends HttpServlet {
 			return;
 		}
 
-		boolean isSuccess = service.register(username, password, email);
+		boolean isSuccess = service.register(username, password, email, referalCode);
 
 		if (isSuccess) {
 			

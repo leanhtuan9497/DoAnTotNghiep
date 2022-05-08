@@ -1,24 +1,11 @@
 package com.leanhtuan.service.impl;
 
-import java.io.File;
 import java.util.List;
 
-import com.leanhtuan.dao.CartDao;
 import com.leanhtuan.dao.CartItemDao;
-import com.leanhtuan.dao.ProductDao;
-import com.leanhtuan.dao.UserDao;
-import com.leanhtuan.dao.impl.CartDaoImpl;
 import com.leanhtuan.dao.impl.CartItemDaoImpl;
-import com.leanhtuan.dao.impl.ProductDaoImpl;
-import com.leanhtuan.dao.impl.UserDaoImpl;
-import com.leanhtuan.model.Cart;
 import com.leanhtuan.model.CartItem;
-import com.leanhtuan.model.Product;
-import com.leanhtuan.model.User;
 import com.leanhtuan.service.CartItemService;
-import com.leanhtuan.service.CartService;
-import com.leanhtuan.service.ProductService;
-import com.leanhtuan.service.UserService;
 
 public class CartServiceItemImpl implements CartItemService {
 	CartItemDao cartItemDao = new CartItemDaoImpl();
