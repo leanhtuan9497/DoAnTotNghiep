@@ -9,16 +9,23 @@ public class User implements Serializable {
 	private String password;
 	private String avatar;
 	private int roleId;
+	private int point;
+	private String referalCode;
+	private String myReferalCode;
+
 	public User() {
 		super();
 	}
-	public User(String email, String username, String password) {
+
+	public User(String email, String username, String password, String referalCode) {
 		super();
 		this.email = email;
 		this.username = username;
 		this.password = password;
+		this.referalCode = referalCode;
 	}
-	public User(int id, String email, String username, String password, String avatar, int roleId) {
+
+	public User(int id, String email, String username, String password, String avatar, int roleId, int point) {
 		super();
 		this.id = id;
 		this.email = email;
@@ -26,43 +33,100 @@ public class User implements Serializable {
 		this.password = password;
 		this.avatar = avatar;
 		this.roleId = roleId;
+		this.point = point;
 	}
+
+	public User(int id, String email, String username, String password, String avatar, int roleId, int point,
+			String referalCode, String myReferalCode) {
+		super();
+		this.id = id;
+		this.email = email;
+		this.username = username;
+		this.password = password;
+		this.avatar = avatar;
+		this.roleId = roleId;
+		this.point = point;
+		this.referalCode = referalCode;
+		this.myReferalCode = myReferalCode;
+	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 	public String getUsername() {
 		return username;
 	}
+
 	public void setUsername(String username) {
 		this.username = username;
 	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	public String getAvatar() {
 		return avatar;
 	}
+
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
+
 	public int getRoleId() {
 		return roleId;
 	}
+
 	public void setRoleId(int roleId) {
 		this.roleId = roleId;
 	}
 
-	
+	public int getPoint() {
+		return point;
+	}
+
+	public void setPoint(int point) {
+		this.point = point;
+	}
+
+	public String getReferalCode() {
+		return referalCode;
+	}
+
+	public void setReferalCode(String referalCode) {
+		this.referalCode = referalCode;
+	}
+
+	public String getMyReferalCode() {
+		return myReferalCode;
+	}
+
+	public void setMyReferalCode(String myReferalCode) {
+		this.myReferalCode = myReferalCode;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", email=" + email + ", username=" + username + ", password=" + password + ", avatar="
+				+ avatar + ", roleId=" + roleId + ", point=" + point + ", referalCode=" + referalCode
+				+ ", myReferalCode=" + myReferalCode + "]";
+	}
+
 }

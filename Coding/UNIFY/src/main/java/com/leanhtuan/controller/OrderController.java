@@ -1,6 +1,7 @@
 package com.leanhtuan.controller;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import org.apache.commons.fileupload.FileItem;
 
 import com.leanhtuan.model.Cart;
 import com.leanhtuan.model.CartItem;
@@ -36,11 +39,15 @@ public class OrderController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		HttpSession session = req.getSession();
 		Object obj = session.getAttribute("account");
+		String total = req.getParameter("total");
 		User buyer = (User) obj;
+		System.out.println(buyer);
+		System.out.println(total);
 		Cart cart = new Cart();
 		cart.setBuyer(buyer);
 		cart.setBuyDate(new java.sql.Date(time));
 		cart.setId(RandomUUID.getRandomID());
+		cart.setTotal_amount(Float.parseFloat(total));
 		cartService.insert(cart);
 
 		Object objCart = session.getAttribute("cart");
@@ -54,7 +61,6 @@ public class OrderController extends HttpServlet {
 				SendMail sm = new SendMail();
 				sm.sendMail(cart.getBuyer().getEmail(), "UNIFY", "Payment success. We will contact you soon ! ");
 				cartItemService.insert(cartItem);
-				
 			}
 
 		}

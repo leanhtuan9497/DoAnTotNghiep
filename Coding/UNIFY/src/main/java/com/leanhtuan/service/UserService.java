@@ -17,7 +17,7 @@ public interface UserService {
 	
 	User login(String username, String password);
 	
-	boolean register(String email, String password, String username);
+	boolean register(String email, String password, String username, String referalCode);
 
 	List<User> getAll();
 

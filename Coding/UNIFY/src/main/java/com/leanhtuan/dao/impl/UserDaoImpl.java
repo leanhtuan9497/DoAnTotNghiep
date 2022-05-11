@@ -15,8 +15,8 @@ public class UserDaoImpl extends JDBCConnection implements UserDao {
 
 	@Override
 	public void insert(User user) {
-		int roleId=0;
-		String sql = "INSERT INTO [User](email, username, password,avatar,role_id) VALUES (?,?,?,?,?)";
+		int roleId = 0;
+		String sql = "INSERT INTO [User](email, username, password,avatar,role_id, point, ref_code) VALUES (?,?,?,?,?,?,?)";
 		Connection con = super.getJDBCConnection();
 
 		try {
@@ -25,19 +25,57 @@ public class UserDaoImpl extends JDBCConnection implements UserDao {
 			ps.setString(2, user.getUsername());
 			ps.setString(3, user.getPassword());
 			ps.setString(4, user.getAvatar());
+			ps.setInt(6, 0);
+			ps.setNull(7, 0);
 			try {
-				if(user.getRoleId()==1) {
-					roleId=1;
-				}else {
-					roleId=2;
+				if (user.getRoleId() == 1) {
+					roleId = 1;
+				} else {
+					roleId = 2;
 				}
 
 			} catch (Exception e) {
-				roleId=2;
+				roleId = 2;
 			}
 			ps.setInt(5, roleId);
-			;
 			ps.executeUpdate();
+			String sql3 = "SELECT TOP(1) * FROM [User] ORDER BY id DESC";
+			PreparedStatement ps3 = con.prepareStatement(sql3);
+			ResultSet rs = ps3.executeQuery();
+			rs.next();
+			String sql2 = "INSERT INTO [Referral](user_id, ref_first, ref_second, ref_third, discount_first, discount_second, discount_third) VALUES (?,?,?,?,?,?,?)";
+			PreparedStatement ps2 = con.prepareStatement(sql2);
+			PreparedStatement ps4 = con.prepareStatement("UPDATE [USER] SET my_ref_code = ?, ref_code = ? WHERE id =?");
+			if (user.getReferalCode().isEmpty()) {
+				ps2.setInt(1, rs.getInt("id"));
+				ps2.setNull(2, 0);
+				ps2.setNull(3, 0);
+				ps2.setNull(4, 0);
+				ps2.setFloat(5, 0.03f);
+				ps2.setFloat(6, 0.02f);
+				ps2.setFloat(7, 0.01f);
+				ps2.executeUpdate();
+
+				ps4.setString(1, "" + rs.getInt("id"));
+				ps4.setNull(2, 0);
+				ps4.setInt(3, rs.getInt("id"));
+			} else {
+				ps2.setInt(1, rs.getInt("id"));
+				ps2.setString(2, user.getReferalCode().split("-")[0]);
+				ps2.setString(3, user.getReferalCode().split("-")[1]);
+				ps2.setString(4, user.getReferalCode().split("-")[2]);
+				ps2.setFloat(5, 0.03f);
+				ps2.setFloat(6, 0.02f);
+				ps2.setFloat(7, 0.01f);
+				ps2.executeUpdate();
+				String my_ref_code = rs.getInt("id") + "-" + user.getReferalCode().split("-")[0] + "-"
+						+ user.getReferalCode().split("-")[1];
+				ps4.setString(1, my_ref_code);
+				ps4.setString(2, user.getReferalCode());
+				ps4.setInt(3, rs.getInt("id"));
+
+			}
+			ps4.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -45,18 +83,34 @@ public class UserDaoImpl extends JDBCConnection implements UserDao {
 
 	@Override
 	public void edit(User user) {
-		String sql = "UPDATE [User] SET email = ? , username = ?, password = ?, avatar = ?, role_id = ? WHERE id = ?";
+		String sql = "UPDATE [User] SET email = ? , username = ?, password = ?, avatar = ?, role_id = ?, my_ref_code = ?, ref_code = ?  WHERE id = ?";
 		Connection con = super.getJDBCConnection();
-
+		System.out.println(user.toString());
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
+			PreparedStatement ps2 = con.prepareStatement(
+					"UPDATE [Referral] SET ref_first = ?, ref_second = ?, ref_third = ? WHERE user_id = ?");
 			ps.setString(1, user.getEmail());
 			ps.setString(2, user.getUsername());
 			ps.setString(3, user.getPassword());
 			ps.setString(4, user.getAvatar());
 			ps.setInt(5, user.getRoleId());
-			ps.setInt(6, user.getId());
+			ps.setInt(8, user.getId());
+			if (!user.getReferalCode().isEmpty()) {
+				ps.setString(6, user.getId() + "-" + user.getReferalCode().split("-")[0] + "-"
+						+ user.getReferalCode().split("-")[1]);
+				ps.setString(7, user.getReferalCode());
+				ps2.setString(1, user.getReferalCode().split("-")[0]);
+				ps2.setString(2, user.getReferalCode().split("-")[1]);
+				ps2.setString(3, user.getReferalCode().split("-")[2]);
+				ps2.setInt(4, user.getId());
+			} else {
+				ps.setString(6, user.getMyReferalCode());
+				ps.setNull(7, 0);
+			}
+
 			ps.executeUpdate();
+			ps2.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -97,7 +151,9 @@ public class UserDaoImpl extends JDBCConnection implements UserDao {
 				user.setPassword(rs.getString("password"));
 				user.setAvatar(rs.getString("avatar"));
 				user.setRoleId(Integer.parseInt(rs.getString("role_id")));
-
+				user.setPoint(Integer.parseInt(rs.getString("point")));
+				user.setReferalCode(rs.getString("ref_code"));
+				user.setMyReferalCode(rs.getString("my_ref_code"));
 				return user;
 
 			}
@@ -127,6 +183,8 @@ public class UserDaoImpl extends JDBCConnection implements UserDao {
 				user.setPassword(rs.getString("password"));
 				user.setAvatar(rs.getString("avatar"));
 				user.setRoleId(Integer.parseInt(rs.getString("role_id")));
+				user.setReferalCode(rs.getString("ref_code"));
+				user.setMyReferalCode(rs.getString("my_ref_code"));
 
 				return user;
 
