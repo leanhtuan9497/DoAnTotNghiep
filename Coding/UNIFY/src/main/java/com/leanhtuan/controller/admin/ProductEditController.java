@@ -18,13 +18,10 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import com.leanhtuan.model.Category;
 import com.leanhtuan.model.Product;
-import com.leanhtuan.model.User;
 import com.leanhtuan.service.CategoryService;
 import com.leanhtuan.service.ProductService;
-import com.leanhtuan.service.UserService;
 import com.leanhtuan.service.impl.CategoryServiceImpl;
 import com.leanhtuan.service.impl.ProductServiceImpl;
-import com.leanhtuan.service.impl.UserServiceImpl;
 
 @WebServlet(urlPatterns = { "/admin/product/edit" })
 public class ProductEditController extends HttpServlet {
@@ -70,7 +67,7 @@ public class ProductEditController extends HttpServlet {
 					product.setPrice(Long.parseLong(item.getString()));
 				} else if (item.getFieldName().equals("image")) {
 					if (item.getSize() > 0) {// neu co file d
-						final String dir = "G:\\UNIFY-MAVEN\\UNIFY\\src\\main\\resources\\images";
+						final String dir = "\\UNIFY\\src\\main\\resources\\images";
 						String originalFileName = item.getName();
 						int index = originalFileName.lastIndexOf(".");
 						String ext = originalFileName.substring(index + 1);

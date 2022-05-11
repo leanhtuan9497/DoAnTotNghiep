@@ -4,13 +4,9 @@ import java.io.File;
 import java.util.List;
 
 import com.leanhtuan.dao.ProductDao;
-import com.leanhtuan.dao.UserDao;
 import com.leanhtuan.dao.impl.ProductDaoImpl;
-import com.leanhtuan.dao.impl.UserDaoImpl;
 import com.leanhtuan.model.Product;
-import com.leanhtuan.model.User;
 import com.leanhtuan.service.ProductService;
-import com.leanhtuan.service.UserService;
 
 public class ProductServiceImpl implements ProductService {
 	ProductDao productDao = new ProductDaoImpl();
@@ -31,7 +27,7 @@ public class ProductServiceImpl implements ProductService {
 		if (newProduct.getImage() != null) {
 			// XOA ANH CU DI
 			String fileName = oldProduct.getImage();
-			final String dir = "C:\\Users\\leanh\\Desktop\\DoAnTotNghiep\\DoAnTotNghiep\\Coding\\UNIFY\\src\\main\\resources\\images";
+			final String dir = "\\UNIFY\\src\\main\\resources\\images";
 			File file = new File(dir + "/" + fileName);
 			if (file.exists()) {
 				file.delete();

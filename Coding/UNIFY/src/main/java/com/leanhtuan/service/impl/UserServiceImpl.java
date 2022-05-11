@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
 		if (newUser.getAvatar() != null) {
 			// XOA ANH CU DI
 			String fileName = oldUser.getAvatar();
-			final String dir = "G:\\UNIFY-MAVEN\\UNIFY\\src\\main\\resources\\upload";
+			final String dir = "/UNIFY/src/main/resources/upload";
 			File file = new File(dir + "/" + fileName);
 			if (file.exists()) {
 				file.delete();

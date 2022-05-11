@@ -126,6 +126,27 @@
 						</div>
 					</div>
 					<!--/end result category-->
+
+					<c:forEach items="${productCrawlList }" var="p">
+
+						<div class="filter-results">
+
+							<div
+								class="list-product-description product-description-brd margin-bottom-30">
+								<div class="row">
+
+									<div class="col-sm-4">
+
+										<a href="#"><img
+											class="img-responsive sm-margin-bottom-20" src="${p}" alt=""></a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</c:forEach>
+
+
 					<c:forEach items="${productList }" var="p">
 
 						<div class="filter-results">

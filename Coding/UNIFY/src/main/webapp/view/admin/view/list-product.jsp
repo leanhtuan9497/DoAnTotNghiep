@@ -76,7 +76,7 @@
 												</tr>
 											</thead>
 											<tbody>
-												<c:forEach items="${proList }" var="pro">
+												<c:forEach items="${productList }" var="pro">
 													<tr class="odd gradeX">
 														<td>${pro.id }</td>
 														<c:url value="/image?fname=${pro.image }" var="imgUrl"></c:url>
@@ -134,3 +134,5 @@
 		<script src="${url}/js/custom.js"></script>
 </body>
 </html>
+
+unify/images

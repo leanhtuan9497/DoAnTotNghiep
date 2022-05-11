@@ -23,7 +23,7 @@ public class DownloadImageController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String fileName = req.getParameter("fname");
 
-		final String dir = "/UNIFY/src/main/resources/images";
+		final String dir = "\\UNIFY\\src\\main\\resources\\images";
 
 		File file = new File(dir + "/" + fileName);
 
