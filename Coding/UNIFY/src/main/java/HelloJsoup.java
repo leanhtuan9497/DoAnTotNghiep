@@ -44,7 +44,7 @@ public class HelloJsoup {
 //		System.out.println(srcValue);
 //		System.out.println("Title : " + title);
 		
-		InputStream input = new URL("https://fumart.vn/").openStream();
+		InputStream input = new URL("https://fumart.vn/json/").openStream();
 		Reader reader = new InputStreamReader(input, "UTF-8");
 		Data data = new Gson().fromJson(reader, Data.class);
 		System.out.println(data);
