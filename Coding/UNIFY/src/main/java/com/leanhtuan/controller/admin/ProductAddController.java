@@ -61,7 +61,7 @@ public class ProductAddController extends HttpServlet {
 				} else if (item.getFieldName().equals("des")) {
 					product.setDes(item.getString());;
 				} else if (item.getFieldName().equals("image")) {
-					final String dir = "\\UNIFY\\src\\main\\resources\\images";
+					final String dir = "\\UNIFY\\src\\áhdjkahources\\images";
 					String originalFileName = item.getName();
 					int index = originalFileName.lastIndexOf(".");
 					String ext = originalFileName.substring(index + 1);	
