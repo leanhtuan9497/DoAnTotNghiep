@@ -38,10 +38,6 @@
 <!-- CSS Customization -->
 <link rel="stylesheet" href="${url}/css/custom.css">
 </head>
-<body>
-	<!-- Subiz -->
-	<script>!function(s,u,b,i,z){var o,t,r,y;s[i]||(s._sbzaccid=z,s[i]=function(){s[i].q.push(arguments)},s[i].q=[],s[i]("setAccount",z),r=["widget.subiz.net","storage.googleapis"+(t=".com"),"app.sbz.workers.dev",i+"a"+(o=function(k,t){var n=t<=6?5:o(k,t-1)+o(k,t-3);return k!==t?n:n.toString(32)})(20,20)+t,i+"b"+o(30,30)+t,i+"c"+o(40,40)+t],(y=function(k){var t,n;s._subiz_init_2094850928430||r[k]&&(t=u.createElement(b),n=u.getElementsByTagName(b)[0],t.async=1,t.src="https://"+r[k]+"/sbz/app.js?accid="+z,n.parentNode.insertBefore(t,n),setTimeout(y,2e3,k+1))})(0))}(window,document,"script","subiz","acqwuzcjnesgmdpawkwc");</script>
-	<!-- End Subiz -->
 <body class="header-fixed">
 	<div class="wrapper">
 		<!--=== Header v5 ===-->
@@ -826,6 +822,7 @@
 	<script src="${url}/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<!-- JS Implementing Plugins -->
 	<script src="${url}/plugins/back-to-top.js"></script>
+	<script>!function(s,u,b,i,z){var o,t,r,y;s[i]||(s._sbzaccid=z,s[i]=function(){s[i].q.push(arguments)},s[i].q=[],s[i]("setAccount",z),r=["widget.subiz.net","storage.googleapis"+(t=".com"),"app.sbz.workers.dev",i+"a"+(o=function(k,t){var n=t<=6?5:o(k,t-1)+o(k,t-3);return k!==t?n:n.toString(32)})(20,20)+t,i+"b"+o(30,30)+t,i+"c"+o(40,40)+t],(y=function(k){var t,n;s._subiz_init_2094850928430||r[k]&&(t=u.createElement(b),n=u.getElementsByTagName(b)[0],t.async=1,t.src="https://"+r[k]+"/sbz/app.js?accid="+z,n.parentNode.insertBefore(t,n),setTimeout(y,2e3,k+1))})(0))}(window,document,"script","subiz","acrigdnjxhdmoiwxafrm");</script>
 	<script src="${url}/plugins/smoothScroll.js"></script>
 	<script src="${url}/plugins/jquery.parallax.js"></script>
 	<script src="${url}/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
@@ -856,6 +853,6 @@
     <script src="${url}/js/plugins/placeholder-IE-fixes.js"></script>
 <![endif]-->
 
-</body>
+
 </body>
 </html>

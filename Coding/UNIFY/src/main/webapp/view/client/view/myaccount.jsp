@@ -15,7 +15,7 @@
 	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<
+
 <script type="text/javascript">
 <!--
 	$(document).ready(function() {
@@ -37,6 +37,7 @@
 		});
 	});
 //-->
+
 </script>
 <!DOCTYPE html>
 <html>
@@ -53,7 +54,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<script>!function(s,u,b,i,z){var o,t,r,y;s[i]||(s._sbzaccid=z,s[i]=function(){s[i].q.push(arguments)},s[i].q=[],s[i]("setAccount",z),r=["widget.subiz.net","storage.googleapis"+(t=".com"),"app.sbz.workers.dev",i+"a"+(o=function(k,t){var n=t<=6?5:o(k,t-1)+o(k,t-3);return k!==t?n:n.toString(32)})(20,20)+t,i+"b"+o(30,30)+t,i+"c"+o(40,40)+t],(y=function(k){var t,n;s._subiz_init_2094850928430||r[k]&&(t=u.createElement(b),n=u.getElementsByTagName(b)[0],t.async=1,t.src="https://"+r[k]+"/sbz/app.js?accid="+z,n.parentNode.insertBefore(t,n),setTimeout(y,2e3,k+1))})(0))}(window,document,"script","subiz","acrigdnjxhdmoiwxafrm");</script>
 
 	<hr>
 	<div class="container bootstrap snippet">
@@ -70,6 +71,7 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<!--left col-->
+				<a href="#nogo" onclick="subiz('expandWidget')">Chat</a>
 				<c:url value="/member/myaccount" var="myaccount"></c:url>
 				<form class="form" action="${myaccount }" method="post"
 					id="registrationForm" enctype="multipart/form-data">
@@ -272,6 +274,7 @@
 									<button class="btn btn-lg btn-success pull-right" type="submit">
 										<i class="glyphicon glyphicon-ok-sign"></i> Save
 									</button>
+									
 									<!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
 								</div>
 							</div>
@@ -286,7 +289,9 @@
 		</div>
 		<!--/col-9-->
 	</div>
+	
 	<!--/row-->
+	
 	<script src="${url}/js/forms/page_account.js"></script>
 	<script>
 		window.onload = function checkRef() {
@@ -297,6 +302,9 @@
 
 		};
 	</script>
-
+	<script type="text/javascript">
+    window.subiz('expandWidget')
+</script>
+	
 </body>
 </html>

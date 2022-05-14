@@ -87,7 +87,7 @@
 								<div class="ms-slide">
 									<c:url value="/image?fname=${product.image }" var="imgUrl"></c:url>
 									<img class="ms-brd" src="${url}/img/blank.gif"
-										data-src="${imgUrl}" alt="${product.name }">
+										data-src="//product.hstatic.net/200000312481/product/roiy_6bba46b4ebff4026b79981090be806f4_master.jpg" alt="${product.name }">
 
 								</div>
 
